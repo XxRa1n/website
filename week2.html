@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>week2</title>
+	<style type="text/css">
+		tr {
+			text-align: cent
+		}
+	</style>
+</head>
+<body>
+	<table width="500" border="1" align="center">
+		<!-- 表格标签用caption -->
+		<caption><strong>表格标题</strong></caption>
+		<!--align标签参数center left right -->
+		<!--cellspacing：单元格与单元格边框;cellpadding：单元格内容和单元格边框-->
+		<tr>
+			<!-- 表头标签用th,自动加粗居中 -->
+			<th>first</th>
+			<th>second</th>
+			<th rowspan="3">third</th>
+		</tr>
+		<tr>
+			<td>第一个单元格</td>
+			<td>第二个单元格</td>
+		</tr>
+		<tr>
+			<td>单元格们放在tr标签里面</td>
+			<td>单元格用td</td>
+		</tr>
+		<tr>
+			<td colspan="2">用colspan和rowspan合并单元格</td><td>*</td>
+		</tr>
+	</table>
+	<br/>
+	<!-- 表单 -->
+	<!-- 表单控件+表单域+提示信息 -->
+	<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+		<caption>
+			<h4>标题</h4>
+		</caption>
+		<tr>
+			<td>所在地区</td>
+			<td><input type="text" value="beijing"/></td>
+			<!-- input有很多参数 -->
+		</tr>
+		<tr>
+			<td>用户名</td>
+			<td><input type="text" value="andy"/ maxlength="20"></td>
+			<!-- value这里是默认值 -->
+			<!-- maxlength表示最大长度 -->
+		</tr>
+		<tr>
+			<td>密码</td>
+			<td><input type="password"/></td>
+			<!-- password和text的区别 -->
+		</tr>
+		<tr>
+			<td>性别</td>
+			<td>
+				male<input type="radio" name="sex" checked="checked" />
+				<!-- checked默认被选中 -->
+				female<input type="radio" name="sex" />	
+				unknown<input type="radio" name="sex"/>
+				<!-- name用来区分组别//毕竟是单选标签 -->
+			</td>
+		</tr>
+		<tr>
+			<td>喜欢的类型</td>
+			<td>
+				御姐    <input type="checkbox" name="type"/>
+				黑长直  <input type="checkbox" name="type"/>
+				yasashi<input type="checkbox" name="type"/>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="button" value="button"/>
+				<input type="submit" value="submit"/>
+				<input type="reset" value="reset"/>
+				<input type="image" src=""/>
+				<!-- 图片形状的按钮 -->
+				<input type="file" />
+				<!-- 上传图片 -->
+			</td>
+		</tr>
+	</table>
+	
+
+</body>
+</html>
